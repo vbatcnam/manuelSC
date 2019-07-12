@@ -1,5 +1,5 @@
 'use strict';
-
+//local storage
 var Syntaxe = {
 	'SC.machine':{
 		syntaxe: 'SC.machine(int_nbreDeMilisecondesEntreChaqueDemarrageDEtape)',
@@ -23,7 +23,8 @@ var Syntaxe = {
 	},
 	'SC.actionOn':{
 		syntaxe: 'SC.actionOn(evt, actionDeclancheSiEvtPresent, actionDeclancheSiEvtAbsant, nbreDinstant)',
-		definition: '',
+		definition: `<p>SC.actionOn() est une construction qui a intuitivement la sémantique suivante :</p> <ul><li>On regarde si une configuration événementielle est vérifiée (la configuration est le premier paramètre).</li><li>Si la configuration est vraie à l’instant où cette instruction est exécutée on appelle la méthode passée en deuxième paramètre.</li><li>Si la configuration est fausse alors on exécute le troisième paramètre.</li>
+- Le quatrième paramètre permet quant à lui de répéter l’opération en boucle sur un nombre d’intrants donné (par défaut 1 seul instant). `,
 		theme:'' 
 	},
 }

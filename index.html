@@ -5,7 +5,11 @@
 		<title>Manuel SugarCubesJS</title>
 		<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 		<link rel="stylesheet/less" type="text/css" href="style/general.less">
-		<script src="style/less.js" type="text/javascript"></script>
+		
+<!--
+		<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
+		<script src="style/less.min.js"></script>
+-->
 	</head>
 
 	<body id="general">
@@ -16,66 +20,23 @@
 			</hgroup>
 			<img src="images/logoSugarCubes4b.svg"/>
 		</header>
-		
-		<!-- Creer en JS  -->
 		<nav>
-			<a href="#intro.html">intro</a>
-			<a href="#syntaxe">Syntaxe</a>
+			<button id="versIntro">intro</button>
+			<button id="versSyntaxeScubes">Syntaxe de SugarCubesJS</button>
+			<button id="versSyntaxeSimple">Syntaxe simplifiée</button>
 		</nav>
-
 		<main>
-			<!-- =========================================-->
-			<!-- 1) Intro :  titre déroulant-->
-			<!-- =========================================-->
-			<section id= "intro">
-				<h1>Introduction</h1>
-				<details id="CKOISC">
-					<summary>Qu'est ce que SugarCubesJS ?</summary>
-					<p>SugarCubes est un formalisme dérivée de la Programmation Synchrone comme le langage Esterel.
-						<br>On écrit des programmes dont l'exécution est découpée en une succession d'étapes.
-						<br>Syntaxiquement, le langage propose deux opérateurs d'ordonnancement traités au même niveau : un opérateur de mise en séquence de sous programmes et un opérateur de mise en parallèle...</p>
-				</details>
-				<details id= "KEPEFERSC">
-					<summary>Que peut faire SugarCubesJS ?</summary>
-					<p>SugarCubes permet de faire des programmes réactifs.</p>
-					<p>SugarCubes permet de faire des actions en parallèle.</p>
-				</details>
-				<details id= "KEFOTIL">
-					<summary>Que faut-il pour programmer en SugarCubesJS ?</summary>
-					<p>Il suffit de télécharger <a target="_blank" href="http://jeanferdysusini.free.fr/SugarCubes.js">SugarCubes.js</a> ou de pointer vers son lien.</p>
-					<code> &lt;script src="http://jeanferdysusini.free.fr/SugarCubes.js"&gt;</code>
-					<p>Vous pouvez également télécharger <a target="_blank" href="https://github.com/cl4cnam/SugarCubesFacile/blob/masterHub/syntaxeSimplifieeSC.js">SugarCubesFacile.js</a>. 
-						<br>Cette syntaxe alternative permet une programmation plus aisée des SugarCubes.
-				</details>
-				<details id= "pagePrems">
-					<summary>Mon premier script</summary>
-					<p>
-						<code>var monde = SC.machine(int_nbreDeMilisecondesEntreChaqueDemarrageDEtape);</code>
-						<br>
-						<code>monde.addProgram(objetSugarCube_monObjet);</code>
-					</p>
-				</details>
-				<details id= "tuto">
-					<summary>Un petit tuto sur SugarCubesJS</summary>
-					<p>Vous pouvez voir un petit <a target="_blank" href="https://github.com/vbatcnam/tuto_sugarCubes/blob/master/miniSweet/tuto.md">tuto</a> pour apprendre à programmer avec ScugarCubesJS.</p>
-				</details>
-			</section>
-			<!-- =========================================-->
-			<!-- 2) syntaxe : ordre alphabétique-->
-			<!-- =========================================-->
-			<section id= "syntaxe">
-				<h1>Syntaxe</h1>
-				<ul>
-					<li><a href="#SCJS">Syntaxe de SugarCubesJS</a></li>
-					<li><a href="#SCF">Syntaxe de SugarCubesFacile</a></li>
-				</ul>
-				<h2>Syntaxe de SugarCubesJS</h2>
-				<h2>Syntaxe de SugarCubesFacile</h2>
-			</section>
+			
 		</main>
-		
 		<footer>
 			<a target="_blank" href="https://github.com/LordManta/SugarCubesJS">sugarCubes sur GitHub</a>
+			<a target="_blank" href="https://github.com/LordManta/SugarCubesJS">syntaxe simplifiée sur GitHub</a>
 		</footer>
+<!--
+		<script type="module" src="script/page.js"></script>
+-->
+		<script src="script/syntaxe.js"></script>
+		<script src="script/lib/htmlMaker.js"></script>
+		<script src="script/page.js"></script>
 	</body>
 </html>

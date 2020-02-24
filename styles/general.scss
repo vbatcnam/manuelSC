@@ -1,5 +1,5 @@
 $sc_color: #e11717;
-$background_menu:#acd8d8;
+$header_background:#acd8d8;
 
 
 @mixin menu{
@@ -19,9 +19,9 @@ body{
 	margin: 0;
 }
 
-nav{
+header nav{
 	@include menu;
-	background-color: $background_menu;
+	background-color: $header_background;
 	color: $sc_color;
 	img{
 		display: block;
@@ -29,7 +29,7 @@ nav{
 	}span{
 		display: block;
 		padding: 1em;
-		background: linear-gradient(lighten($background_menu,15%), darken($background_menu,15%));
+		background: linear-gradient(lighten($header_background,15%), darken($header_background,15%));
 	}
 }
 
@@ -59,7 +59,6 @@ footer{
 	display:flex;
 	justify-content: space-around;
 	align-items: center ;
-	background-color: $background_menu;
 	color: $sc_color;
 	text-align: center;
 	margin-top: 2em;

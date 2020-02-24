@@ -1,8 +1,12 @@
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
 }
 
-nav {
+header nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -11,20 +15,20 @@ nav {
   color: #e11717;
 }
 
-nav > * {
+header nav > * {
   cursor: pointer;
 }
 
-nav > *:hover {
+header nav > *:hover {
   filter: brightness(120%);
 }
 
-nav img {
+header nav img {
   display: block;
   padding: 1em;
 }
 
-nav span {
+header nav span {
   display: block;
   padding: 1em;
   background: linear-gradient(#e0f0f0, #78c0c0);
@@ -63,7 +67,6 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #acd8d8;
   color: #e11717;
   text-align: center;
   margin-top: 2em;

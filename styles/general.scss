@@ -1,31 +1,35 @@
 $sc_color: #e11717;
-$bacground:#acd8d8;
+$background_menu:#acd8d8;
+
+
+@mixin menu{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center ;
+	>*{
+		cursor:pointer;
+		&:hover{
+			filter: brightness(120%);
+		}
+	}
+}
+
 body{
 	margin: 0;
 }
 
 nav{
-	display:flex;
-	flex-wrap: wrap;
-	background-color: $bacground;
-	justify-content: space-around;
-	align-items: center ;
+	@include menu;
+	background-color: $background_menu;
+	color: $sc_color;
 	img{
 		display: block;
 		padding: 1em;
-		cursor:pointer;
-		&:hover{
-			background-color: #16E090;
-		}
-		//~ outline: dashed red 1px;
 	}span{
 		display: block;
 		padding: 1em;
-		cursor:pointer;
-		&:hover{
-			color: $sc_color;
-		}
-		//~ outline: dashed red 1px;
+		background: linear-gradient(lighten($background_menu,15%), darken($background_menu,15%));
 	}
 }
 
@@ -55,7 +59,7 @@ footer{
 	display:flex;
 	justify-content: space-around;
 	align-items: center ;
-	background-color: $bacground;
+	background-color: $background_menu;
 	color: $sc_color;
 	text-align: center;
 	margin-top: 2em;

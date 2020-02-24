@@ -5,29 +5,29 @@ body {
 nav {
   display: flex;
   flex-wrap: wrap;
-  background-color: #acd8d8;
   justify-content: space-around;
   align-items: center;
+  background-color: #acd8d8;
+  color: #e11717;
+}
+
+nav > * {
+  cursor: pointer;
+}
+
+nav > *:hover {
+  filter: brightness(120%);
 }
 
 nav img {
   display: block;
   padding: 1em;
-  cursor: pointer;
-}
-
-nav img:hover {
-  background-color: #16E090;
 }
 
 nav span {
   display: block;
   padding: 1em;
-  cursor: pointer;
-}
-
-nav span:hover {
-  color: #e11717;
+  background: linear-gradient(#e0f0f0, #78c0c0);
 }
 
 main section {

@@ -4,26 +4,22 @@
 		<meta charset="utf-8"/>
 		<title>Manuel SugarCubesJS</title>
 		<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
-		<link rel="stylesheet/less" type="text/css" href="style/general.less">
-		
+		<link rel="stylesheet" href="styles/general.css">
+		<link rel="stylesheet" href="styles/default.css">
 <!--
-		<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
-		<script src="style/less.min.js"></script>
+		<link rel="stylesheet" href="styles/brown_paper.css">
 -->
+		<script src="script/lib/highlight.min.js"></script>
+		<script>hljs.initHighlightingOnLoad();</script>
 	</head>
 
 	<body id="general">
-		<header>
-			<hgroup>
-				<h1>SugarCubesJS</h1>
-				<h2>Manuel d'utilisation</h2>
-			</hgroup>
-			<img src="images/logoSugarCubes4b.svg"/>
-		</header>
 		<nav>
-			<button id="versIntro">intro</button>
-			<button id="versSyntaxeScubes">Syntaxe de SugarCubesJS</button>
-			<button id="versSyntaxeSimple">Syntaxe simplifiée</button>
+			<img id="versIntro" src="images/sugarCubesJS.svg"/>
+			<span id="versSyntaxeScubes">Syntaxe</span>
+			<span id="versSyntaxeSimple">Syntaxe simplifiée</span>
+			<span id="versSyntaxeScubesPython">sugarCubes Python</span>
+			<span id="versScubesJava">sugarCubes Java</span>
 		</nav>
 		<main>
 			
@@ -35,7 +31,8 @@
 <!--
 		<script type="module" src="script/page.js"></script>
 -->
-		<script src="script/syntaxe.js"></script>
+		<script src="script/syntaxeSC.js"></script>
+		<script src="script/syntaxeSimple.js"></script>
 		<script src="script/lib/htmlMaker.js"></script>
 		<script src="script/page.js"></script>
 	</body>

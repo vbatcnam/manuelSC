@@ -10,7 +10,6 @@ function crateDicoSyntaxes(dico){
 	for (cle in dico){
 		liste.append(createEltHtml ("dt", cle));
 		liste.append(createEltHtml ("dd", dico[cle]["definition"]));
-		console.log(dico[cle]);
 	}
 	return liste
 }

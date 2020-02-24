@@ -29,17 +29,18 @@ var intro = `
 		<details id= "KEFOTIL">
 			<summary>Que faut-il pour programmer en SugarCubesJS ?</summary>
 			<p>Il suffit de télécharger <a target="_blank" href="http://jeanferdysusini.free.fr/SugarCubes.js">SugarCubes.js</a> ou de pointer vers son lien.</p>
-			<code> &lt;script src="http://jeanferdysusini.free.fr/SugarCubes.js"&gt;</code>
+			<pre><code> 
+				&lt;script src="http://jeanferdysusini.free.fr/SugarCubes.js"&gt;
+			</code></pre>
 			<p>Vous pouvez également télécharger <a target="_blank" href="https://github.com/cl4cnam/SugarCubesFacile/blob/masterHub/syntaxeSimplifieeSC.js">SugarCubesFacile.js</a>. 
 				<br>Cette syntaxe alternative permet une programmation plus aisée des SugarCubes.
 		</details>
 		<details id= "pagePrems">
 			<summary>Mon premier script</summary>
-			<p>
-				<code>var monde = SC.machine(int_nbreDeMilisecondesEntreChaqueDemarrageDEtape);</code>
-				<br>
-				<code>monde.addProgram(objetSugarCube_monObjet);</code>
-			</p>
+			<pre><code>
+				var monde = SC.machine(int_nbreDeMilisecondesEntreChaqueDemarrageDEtape);
+				monde.addProgram(objetSugarCube_monObjet);
+			</code></pre>
 		</details>
 		<details id= "tuto">
 			<summary>Tutos sur SugarCubesJS</summary>
@@ -48,8 +49,10 @@ var intro = `
 			<p><a target="_blank" href="https://github.com/vbatcnam/minimonde">un mini monde</a> une démo de ce qu'il est possible de faire avec ScubesJS.</p>
 		</details>
 	</section>`
-
+	
 main.innerHTML = intro;
+let codes = document.querySelectorAll("pre code");
+for(pre of codes){hljs.highlightBlock(pre);}
 
 //=======================================================================
 //					Section  Intro
@@ -80,21 +83,44 @@ lienVersSyntaxeScubes.addEventListener("click", function(){
 	
 	section = document.createElement("section");
 	section.id="dico";
-	main.append(crateDicoSyntaxes(syntaxeSC))
+	section.append(crateDicoSyntaxes(syntaxeSC));
+	main.append(section)
 	
 });
 
-
 //=======================================================================
-//					Section  Syntaxe simplifiée
+//					Section  Syntaxe sugarCubes python
 //=======================================================================
-var lienVersSyntaxeSimple = document.getElementById("versSyntaxeSimple");
-
-lienVersSyntaxeSimple.addEventListener("click", function(){
+var lienVersSyntaxeScubesPython = document.getElementById("versSyntaxeScubesPython");
+lienVersSyntaxeScubesPython.addEventListener("click", function(){
 	main.innerHTML = `
-	<section id= "syntaxeSimple">
-		<h1>Syntaxe simplifiée</h1>
-		<nav id="lesSyntaxesSimple"></nav>
+	<section id= "syntaxeSCPython">
+		<h1>Syntaxe sugarCubes python</h1>
+		<nav id="lesSyntaxesSCPython"></nav>
+		<p>Pour coder avec SugarCubes python vous devez télécharger <a href="https://github.com/cl4cnam/SugarCubesPython/blob/masterHub/SugarCubes.py" target="_blank">sugarCubes.py</a> disponible sur github.</p>
+		
+		<a href="https://github.com/cl4cnam/SugarCubesPython" target="_blank">Le code de sugarCubes python sur github</a>
+		
 	</section>`
-	
+
+});
+
+//=======================================================================
+//					Section sugarCubes java
+//=======================================================================
+var lienVersScubesJava = document.getElementById("versScubesJava");
+lienVersScubesJava.addEventListener("click", function(){
+	main.innerHTML = `
+	<section id= "sCJava">
+		<hgroup>
+			<h1>SugarCubes Java</h1>
+			<img src="images/SugarCubes.gif">
+		</hgroup>
+		<p>SugarCubes a été initialement écrit pour java dans les années 90.</p>
+		<ul>
+		<li><a href="http://jeanferdysusini.free.fr/index.php?action=SCread&ver=5.0" target="_blank">Un aperçu de sugarCubes java</a></li>
+		<li><a href="http://jeanferdysusini.free.fr/v5.0/jdoc/index.html" target="_blank">Le manuel de référence avec la syntaxe de sugarCubes java</a></li>
+		<li><a href="http://jeanferdysusini.free.fr/index.php?action=SC" target="_blank">Le site de J-F Susini pour plus de détail</a></li>
+		</ul>
+	</section>`
 });

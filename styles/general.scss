@@ -48,8 +48,23 @@ main{
 					color: $sc_color;
 				}
 			}&[open]{
-				border-bottom: 1px solid red ;
+				border-bottom: 1px solid $sc_color ;
 				padding: 1em;
+			}
+		}dl{
+			display: grid;
+			grid-template-columns: 0.5fr 1.5fr;
+			column-gap: 0px;
+			row-gap: 1em;
+			dt{
+				border: 1px solid lighten($header_background,15%) ;
+				padding:1em;
+				background-color:lighten($header_background,15%);
+			}
+			dd{
+				border: 1px solid lighten($header_background,15%) ;
+				padding:1em;
+				margin:0;
 			}
 		}
 	}

@@ -15,8 +15,17 @@ $header_background:#acd8d8;
 	}
 }
 
+html{
+	height:100%;
+}
+
 body{
+	height:100%;
 	margin: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	outline: 1px dashed blue;
 }
 
 header nav{

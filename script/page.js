@@ -46,8 +46,9 @@ var intro = `
 			<summary>Tutos sur SugarCubesJS</summary>
 			<p><a target="_blank" href="https://github.com/vbatcnam/tuto_sugarCubes/blob/master/miniSweet/tuto.md">Les miniSweet</a> pour apprendre à programmer avec ScugarCubesJS. Niveau débutant.</p>
 			<p><a target="_blank" href="https://github.com/ponsatcnam/SCJSpedago">SCJSpedago</a> Une description étape par étape des implémentations des objets synchrones réactifs en Javascript.</p>
-			<p><a target="_blank" href="https://github.com/vbatcnam/minimonde">un mini monde</a> une démo de ce qu'il est possible de faire avec ScubesJS.</p>
-			<p><a target="_blank" href="https://github.com/vbatcnam/casseBriqueSC">un casse briques réalisé avec sugarCubesJS</a></p>
+			<p><a target="_blank" href="https://github.com/vbatcnam/minimonde">Un mini monde</a> une démo de ce qu'il est possible de faire avec ScubesJS.</p>
+			<p><a target="_blank" href="https://github.com/vbatcnam/casseBriqueSC">Un casse briques réalisé avec sugarCubesJS</a></p>
+			<p><a target="_blank" href="https://github.com/vbatcnam/touchesMusicale">Les touches musicales.</a>Une petite démo.</p>
 		</details>
 	</section>`
 	

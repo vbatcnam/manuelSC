@@ -43,12 +43,14 @@ var intro = `
 			</code></pre>
 		</details>
 		<details id= "tuto">
-			<summary>Tutos sur SugarCubesJS</summary>
+			<summary>Tutos et démos sur SugarCubesJS</summary>
 			<p><a target="_blank" href="https://github.com/vbatcnam/tuto_sugarCubes/blob/master/miniSweet/tuto.md">Les miniSweet</a> pour apprendre à programmer avec ScugarCubesJS. Niveau débutant.</p>
-			<p><a target="_blank" href="https://github.com/ponsatcnam/SCJSpedago">SCJSpedago</a> Une description étape par étape des implémentations des objets synchrones réactifs en Javascript.</p>
 			<p><a target="_blank" href="https://github.com/vbatcnam/minimonde">Un mini monde</a> une démo de ce qu'il est possible de faire avec ScubesJS.</p>
-			<p><a target="_blank" href="https://github.com/vbatcnam/casseBriqueSC">Un casse briques réalisé avec sugarCubesJS</a></p>
-			<p><a target="_blank" href="https://github.com/vbatcnam/touchesMusicale">Les touches musicales.</a>Une petite démo.</p>
+			<p><a target="_blank" href="https://github.com/vbatcnam/touchesMusicale">Les touches musicales.</a> Une petite démo.</p>
+			<p><a target="_blank" href="https://github.com/vbatcnam/casseBriqueSC">Un jeu de casse briques</a> réalisé avec Jean-Ferdy Susiny et Olivier Pons.</p>
+			<p><a target="_blank" href="http://jeanferdysusini.free.fr/LibReact9.html">Fight club.</a> Démo réalisée par Jean-Ferdy Susini.</p>
+			<p><a target="_blank" href="http://jeanferdysusini.free.fr/MeteorJS.php">Meteor.</a> Simulation d'un système planétaire réalisée par Jean-Ferdy Susini.</p>
+			<p><a target="_blank" href="https://github.com/ponsatcnam/SCJSpedago">SCJSpedago</a> Une description étape par étape des implémentations des objets synchrones réactifs en Javascript réalisée par Olivier Pons</p>
 		</details>
 	</section>`
 	

@@ -10,7 +10,7 @@ $header_background:#acd8d8;
 	>*{
 		cursor:pointer;
 		&:hover{
-			filter: brightness(120%);
+			filter: brightness(110%);
 		}
 	}
 }
@@ -38,6 +38,7 @@ header nav{
 	}span{
 		display: block;
 		padding: 1em;
+		border-radius:10px;
 		background: linear-gradient(lighten($header_background,15%), darken($header_background,15%));
 	}
 }

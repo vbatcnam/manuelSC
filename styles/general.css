@@ -25,7 +25,7 @@ header nav > * {
 }
 
 header nav > *:hover {
-  filter: brightness(120%);
+  filter: brightness(110%);
 }
 
 header nav img {
@@ -36,6 +36,7 @@ header nav img {
 header nav span {
   display: block;
   padding: 1em;
+  border-radius: 10px;
   background: linear-gradient(#e0f0f0, #78c0c0);
 }
 

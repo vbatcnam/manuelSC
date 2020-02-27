@@ -77,6 +77,15 @@ main{
 				margin:0;
 			}
 		}
+		figure{
+			display:flex;
+			flex-direction: row-reverse;
+			justify-content: space-around;
+			align-items: center;
+			img{
+				height: 20em;
+			}
+		}
 	}
 }
 

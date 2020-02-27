@@ -6,6 +6,7 @@ var main = document.querySelector("main");
 var intro = `
 	<section id= "intro">
 		<h1>Introduction</h1>
+		<p>Vous pouvez accéder à la <a href="http://jeanferdysusini.free.fr/index.php?action=SCJS" target="_balnk">page perso</a> de Jean-Ferdi Susini développeur de sugarCubesJS pour plus de détails.</p>
 		<details id="CKOISC">
 			<summary>Qu'est ce que SugarCubesJS ?</summary>
 			<p>SugarCubes est un formalisme dérivée de la Programmation Synchrone comme le langage Esterel.
@@ -41,6 +42,24 @@ var intro = `
 				var monde = SC.machine(int_nbreDeMilisecondesEntreChaqueDemarrageDEtape);
 				monde.addProgram(objetSugarCube_monObjet);
 			</code></pre>
+			<p>Voir le <a href="https://github.com/LordManta/SugarCubesJS" target="_blank">read-me</a> de Jean-Ferdy Susini sur github</p>
+		</details>
+		<details id= "scseq">
+			<summary>Les instructions réactives</summary>
+					<p>Un programme SugarCubesJS est une structure arborescente dont les nœuds sont des instructions réactives.</p>
+			<p> Une instruction réactive est implantée par un objet JavaScript.
+				<br>Pour chaque type d'instruction, une fonction permet de créer un objet implantant cette instruction :
+				<br>Certaines ont plusieurs instructions réactives en paramètres comme par exemple SC.seq, SC.par, SC.kill.</p>
+			<p>
+				<code>SC.seq()</code> permet de créer une instruction séquence à partir d'instructions passé en paramètre à <code>SC.seq()</code> permettant de créer une séquence d'instructions :
+			</p>
+			<figure>
+				<img src="images/arbreInstruction.svg"/>
+				<figcaption>
+					<pre><code>SC.seq(instruction1,instruction2,instruction3)</code></pre>
+				</figcaption>
+			</figure>
+			<p>Ce chapitre est Réalisé à partir de <a href="http://jeanferdysusini.free.fr/index.php?action=SCJS" target="_balnk">page perso de Jean-Ferdi Susini</a> que j'ai réadapté pour les débutant(e)s</p>
 		</details>
 		<details id= "tuto">
 			<summary>Tutos et démos sur SugarCubesJS</summary>
@@ -50,6 +69,8 @@ var intro = `
 			<p><a target="_blank" href="https://github.com/vbatcnam/casseBriqueSC">Un jeu de casse briques</a> réalisé avec Jean-Ferdy Susiny et Olivier Pons.</p>
 			<p><a target="_blank" href="http://jeanferdysusini.free.fr/LibReact9.html">Fight club.</a> Démo réalisée par Jean-Ferdy Susini.</p>
 			<p><a target="_blank" href="http://jeanferdysusini.free.fr/MeteorJS.php">Meteor.</a> Simulation d'un système planétaire réalisée par Jean-Ferdy Susini.</p>
+			<p><a target="_blank" href="http://jeanferdysusini.free.fr/ProiePredateur.php">Prédateur proie.</a> Simulation réalisée par Jean-Ferdy Susini.</p>
+			<p><a target="_blank" href="http://jeanferdysusini.free.fr/KeyboardTrainer.html">Keyboard Trainer.</a> réalisé par Jean-Ferdy Susini.</p>
 			<p><a target="_blank" href="https://github.com/ponsatcnam/SCJSpedago">SCJSpedago</a> Une description étape par étape des implémentations des objets synchrones réactifs en Javascript réalisée par Olivier Pons</p>
 		</details>
 	</section>`

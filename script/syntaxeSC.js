@@ -80,11 +80,11 @@ var syntaxeSC = {
 		</code>`,
 		theme:"",
 	},
-	//~ '':{
-		//~ syntaxe: '',
-		//~ definition:``,
-		//~ theme:"",
-	//~ },
+	'SC.seq':{
+		syntaxe: 'SC.seq(instruction1, instruction2, ...,insstrucN)',
+		definition:``,
+		theme:"",
+	},
 	//~ '':{
 		//~ syntaxe: '',
 		//~ definition:``,

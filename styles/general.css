@@ -88,6 +88,17 @@ main section dl dd {
   margin: 0;
 }
 
+main section figure {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main section figure img {
+  height: 20em;
+}
+
 footer {
   display: flex;
   justify-content: space-around;

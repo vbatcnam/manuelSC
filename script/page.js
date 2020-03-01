@@ -83,8 +83,7 @@ for(pre of codes){hljs.highlightBlock(pre);}
 //					Section  Intro
 //=======================================================================
 var lienVersIntro = document.getElementById("versIntro");
-lienVersIntro.addEventListener("click", function(){
-	main.innerHTML = intro});
+lienVersIntro.addEventListener("click", function(){main.innerHTML = intro});
 
 //=======================================================================
 //					Section  Syntaxe sugarCubes
@@ -95,10 +94,15 @@ lienVersSyntaxeScubes.addEventListener("click", function(){
 	main.innerHTML = `
 	<section id= "syntaxeScubes">
 		<h1>Syntaxe de SugarCubesJS</h1>
-		<label for="chercheSyntaxesSC">Rechercher
-			<input id ="chercheSyntaxesSC" type="search" name="q">
-		</label>
-		<button id="searchSyntaxeSC">Ok</button>
+		<section id= "recherche">
+			<label for="chercheSyntaxesSC">Rechercher
+				<input id ="chercheSyntaxesSC" type="search" name="q">
+			</label>
+			<button id="searchSyntaxeSC">Ok</button>
+		</section>
+		<section id= "lien ext">
+			<p>Sur <a href="" targe="_blank">le site de Jean-Ferdy Susiny</a> vous avez des explictions plus en détail de la syntaxe et de la manière de les utiliser.</p>
+		</section>
 	</section>`
 
 	var chercheSyntaxeSC = document.getElementById("searchSyntaxeSC")
@@ -111,6 +115,8 @@ lienVersSyntaxeScubes.addEventListener("click", function(){
 	section.append(crateDicoSyntaxes(syntaxeSC));
 	main.append(section)
 	
+	let codes = document.querySelectorAll("pre code");
+	for(pre of codes){hljs.highlightBlock(pre);}
 });
 
 //=======================================================================

@@ -21,7 +21,13 @@ var syntaxeSC = {
 	},
 	'addProgram':{
 		syntaxe: 'machineExecution.addProgram(objetSugarCubes)',
-		definition: "Ajoute  un programme à la machine d'exécution",
+		definition: `Ajoute  un programme à la machine d'exécution. Par exemple :
+		<br><pre><code>
+			var machine = SC.machine();
+			var evt = SC.evt("e");
+			var prog = SC.repeatForever(SC.pause(10), SC.generate(evt));
+			machine.addProgram(prog);
+		</code></pre>`,
 		theme:'ajouter un programme' 
 	},
 	'SC.await':{
@@ -65,7 +71,8 @@ var syntaxeSC = {
 	},
 	'SC.machine':{
 		syntaxe: 'SC.machine(int_nbreDeMilisecondesEntreChaqueDemarrageDEtape)',
-		definition: ``,
+		definition: `C'est la machine d'execution qui sert à executer les programmes réactifs.
+		<br><code>var machine = SC.machine();</code>`,
 		theme:'machine sugarCubes' 
 	},
 	'SC.my':{
@@ -94,7 +101,7 @@ var syntaxeSC = {
 		<code>
 			SC.repeat(SC.forever, actionToRepeat);
 			SC.repeat(30, actionToRepeat); 
-		</code>`
+		</code>
 		<br> SC.repeat(N) peut se traduire par répète 30 fois :<code>
 			SC.seq(
 				actionToRepeat,
@@ -105,8 +112,7 @@ var syntaxeSC = {
 				actionToRepeat//fin
 			); 
 
-		</code>`
-		,
+		</code>`,
 		theme:"",
 	},
 	'SC.seq':{

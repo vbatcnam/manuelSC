@@ -18,9 +18,14 @@ var syntaxeSC = {
 		theme:'action' 
 	},
 	'addProgram':{
-		syntaxe: 'addProgram(objetSugarCubes)',
-		definition: '',
-		theme:'ajouter un proramme' 
+		syntaxe: 'machineExecution.addProgram(objetSugarCubes)',
+		definition: "<p>Ajoute  un programme à la machine d'exécution</p>",
+		theme:'ajouter un programme' 
+	},
+	'SC.await':{
+		syntaxe: 'SC.await(evt(s))',
+		definition:`Attend un évenement ou une liste d'évenements mis en paramètre.`,
+		theme:"",
 	},
 	'SC.control':{
 		syntaxe: '',
@@ -66,8 +71,14 @@ var syntaxeSC = {
 	},
 	'SC.par':{
 		syntaxe: 'SC.par(instruction1, instructionN,..)',
-		definition:`met en parallèle des instructions; nombre de paramètres variables`,
+		definition:`<p>Met en parallèle des instructions; nombre de paramètres variables</p>`,
 		theme:"instruction en parallèle",
+	},
+	'SC.pause':{
+		syntaxe: 'SC.pause(nbreDePauses)',
+		definition:`<p>Sert à attendre l'étape suivante.</p>,
+			<p><code>SC.pauseForever()</code> est un raccourcit de <code>SC.pause(SC.forever)</code></p>`,
+		theme:"",
 	},
 	'SC.repeat': {
 		syntaxe: 'SC.repeat()',

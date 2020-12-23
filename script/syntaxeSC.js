@@ -62,6 +62,12 @@ var syntaxeSC = {
 
 		`,theme:"",
 	},
+	'SC.forever':{
+		syntaxe:'',
+		definition:`
+			Dit de faire une boucle infinie à chaque instant. 
+		`,theme:"",
+	},
 	'SC.generate':{
 		syntaxe: 'SC.generate(evt, valeurAssocieAEvt, nbreDinstant)',
 		definition: `
@@ -147,12 +153,6 @@ var syntaxeSC = {
 		
 		`,theme:"",
 	},
-	//~ '':{
-		//~ syntaxe:'',
-		//~ definition:`
-		
-		//~ `,theme:"",
-	//~ },
 	//~ '':{
 		//~ syntaxe:'',
 		//~ definition:`

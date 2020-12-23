@@ -20,24 +20,26 @@ header nav {
   color: #e11717;
 }
 
-header nav > * {
-  cursor: pointer;
-}
-
-header nav > *:hover {
-  filter: brightness(110%);
-}
-
 header nav img {
   display: block;
   padding: 1em;
+  cursor: pointer;
+}
+
+header nav img:hover {
+  filter: brightness(110%);
 }
 
 header nav span {
   display: block;
   padding: 1em;
+  cursor: pointer;
   border-radius: 10px;
   background: linear-gradient(#e0f0f0, #78c0c0);
+}
+
+header nav span:hover {
+  filter: brightness(110%);
 }
 
 main section {
